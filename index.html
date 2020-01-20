@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Welcome to SX3C website</title>
+
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+
+	<link rel="shortcut icon" href="images/logo.png">
+</head>
+<body>
+	<!-- banner with nav-->
+	<div class="banner">
+		<div class="logo">
+			<img src="images/logo.png">
+		</div>
+
+		<div class="heading">
+			<h1>SXC's Computer Club</h1>
+			<h4><span>Code </span><span> Compute </span><span> Create</span></h4>
+		</div>
+	</div>
+
+	<div class="menutoggle"></div>
+		<div class="menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="executives.html">Executives</a></li>
+			<li><a href="house.html">House System</a></li>
+			<li><a href="timeline.html">Timeline</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="blog.html">Blog</a></li>
+		</ul>
+	</div>
+	<!-- banner with nav ends -->
+
+	<!-- image slider -->
+	<script src="js/jssor.slider.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		jssor_1_slider_init = function() {
+
+			var jssor_1_options = {
+				$AutoPlay: 1,
+				$SlideDuration: 800,
+				$PauseOnHover: false,
+				$SlideEasing: $Jease$.$OutQuint,
+				$ArrowNavigatorOptions: {
+					$Class: $JssorArrowNavigator$
+				},
+				$BulletNavigatorOptions: {
+					$Class: $JssorBulletNavigator$
+				}
+			};
+
+			var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+			/*#region responsive code begin*/
+
+			var MAX_WIDTH = 3000;
+
+			function ScaleSlider() {
+				var containerElement = jssor_1_slider.$Elmt.parentNode;
+				var containerWidth = containerElement.clientWidth;
+
+				if (containerWidth) {
+
+					var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+					jssor_1_slider.$ScaleWidth(expectedWidth);
+				}
+				else {
+					window.setTimeout(ScaleSlider, 30);
+				}
+			}
+
+			ScaleSlider();
+
+			$Jssor$.$AddEvent(window, "load", ScaleSlider);
+			$Jssor$.$AddEvent(window, "resize", ScaleSlider);
+			$Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+			/*#endregion responsive code end*/
+		};
+	</script>
+
+	<div id="jssor_1" style="position:relative;margin:auto;top:10px;left:0px;width:1300px;height:400px;overflow:hidden;visibility:hidden;">
+
+		<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;">
+			<div>
+				<img data-u="image" src="images/wallpaper.jpg" />
+			</div>
+			<div>
+				<img data-u="image" src="images/wallpaper.jpg" />
+			</div>
+			<div>
+				<img data-u="image" src="images/wallpaper.jpg" />
+			</div>
+			<div>
+				<img data-u="image" src="images/wallpaper.jpg" />
+			</div>
+			<div style="position:absolute;top:50px;left:50px;width:450px;height:62px;z-index:0;font-size:16px;color:#000000;line-height:24px;text-align:left;padding:5px;box-sizing:border-box;">
+				<img data-u="image" src="images/wallpaper.jpg" />
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">jssor_1_slider_init();</script>
+	<!-- image slider ends -->
+	<div class="clear" style="clear: both;"></div>
+
+	<!-- moderator speaks -->
+	<div class="title">
+		<span>Moderator Speaks</span>
+	</div>
+
+	<div class="col-sm-11 moderator m-auto">
+		<div class="m-img">
+			<img src="images/founder.jpg">
+		</div>
+
+		<div class="m-quote">
+			<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor.</p>
+
+			<div class="m-name">
+				<h3>Saugat Sigdel</h3>
+				<h4>Moderator</h4>
+			</div>
+		</div>
+	</div>
+	<!-- moderator speaks ends -->
+
+	<!-- footer -->
+	<footer>
+		<div class="first-row">
+			<ul>
+				<li><a href="https://facebook.com/sx3c.sxc.nepal"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-github"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="second-row">
+			<p align="center">&copy;2019-2020 Copyright <span>SX3C Family</span>&nbsp;&nbsp;&nbsp;Designed by <a href="#"><span>Manish Acharya</span></a></p>
+		</div>
+	</footer>
+	<!-- footer ends -->
+
+	<!-- responsive navbar -->
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.menutoggle').click(function(){
+			$('.menutoggle').toggleClass('nav-active');
+			$('.menu').toggleClass('nav-active');
+		})
+	})
+</script>
+	<!-- responsive navbar ends -->
+</body>
+</html>
