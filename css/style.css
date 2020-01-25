@@ -752,6 +752,29 @@ ul li:hover .submenu-about {
   padding: 10px;
 }
 
+.learn_more{
+  width: 25%;
+  padding: 10px;
+  background: #233240;
+  border-radius: 5px;
+  text-align: center;
+  height: 50px;
+  transition: 0.5s;
+}
+
+.learn_more a{
+  font-weight: bold;
+  font-family: "ubuntu";
+  color: #fff;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+}
+
+.learn_more:hover{
+  transform: scale(1.1);
+  box-shadow: 2px 2px 8px #233240;
+}
+
 .sxc-intro p{
   text-align: justify;
   text-align-last: left;
@@ -824,6 +847,11 @@ ul li:hover .submenu-about {
 .details span:hover{
   box-shadow: 0 5px 10px gray;
   transform: scale(0.9);
+}
+
+.details span a{
+color: #fff;
+text-decoration: none;
 }
 
 .image:hover img{
