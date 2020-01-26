@@ -427,4 +427,20 @@ margin: auto;
   top: 78%;
   left: 50%;
 }
+
+/*sxc festival*/
+.sxc-logo{
+width: 100%;
+}
+
+.sxc-detail{
+width: 100%;
+padding: 0px;
+}
+
+
+.learn_more{
+display: block;
+margin: auto;
+}
 }
