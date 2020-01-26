@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+body{
+  overflow-y:hidden;
+}
+
 /*banner with nav*/
 .banner {
   width: 100%;
