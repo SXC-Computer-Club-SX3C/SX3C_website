@@ -834,9 +834,9 @@ width: 100%;
 }
 
 .sxc-button{
-  width: 250px;
+  width: 200px;
   padding: 10px;
-  background: #233240;
+  background: skyblue;
   transition: 0.5s;
   border-radius: 5px;
   border: none;
@@ -850,12 +850,7 @@ width: 100%;
   box-shadow: 0 5px 10px gray;
   transform: scale(0.9);
 }
-
-.sxc-button a{
-color: #fff;
-text-decoration: none;
-}
-
+ 
 .image:hover img{
   transform: scale(1.2);
   filter: blur(1px);
@@ -905,27 +900,74 @@ text-decoration: none;
   font-weight: bolder;
 }
 
+.title-sponsor{
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+.title-sponsor h4, .sponsor-box h4{
+  font-family: "dosis";
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.title-img{
+  display: block;
+  margin: auto;
+  width: 20%;
+}
+
+.title-img img{
+  width: 100%;
+}
+
 .static-row{
+  margin-top: 5%;
   width: 100%;
   display: table;
   padding: 10px 50px;
   box-sizing: border-box;
 }
 
-.s-2{
-  float: right;
-}
-
 .sponsor-box{
   width: 30%;
-  height: 200px;
-  background: gray;
+  height: 150px;
+  background: #fff;
   float: left;
+}
+
+.sponsor-img img{
+  width: 100%;
+  height: 100%;
 }
 
 .s-1{
   margin-left: 5%;
   margin-right: 5%;
+}
+
+.s-2{
+  float: right;
+}
+
+.sponsor-logo img{
+  width: 100%;
+  height: 125px;
+}
+
+.owl-one{
+  margin-top: 5%;
+}
+
+.general{
+  margin-top: 5%;
+  text-align: center;
+    font-family: "dosis";
+  font-weight: bolder;
+
 }
 
 /*footer*/
